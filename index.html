@@ -19,6 +19,9 @@
     <header>
         <h1>AVALIE A SUA MENTORIA</h1>
         <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+        
+        <img class="imagem-header" src="imagens/imagem-header.svg" alt="Imagem de um balão de conversa vermelho, cor rosa e com 5 estrelas sendo tres delas
+        brancas e as outras duas uma cor mais escura">
     </header>
 
     <div class="page">
@@ -40,11 +43,86 @@
                         <input type="text" name="sobrenome" id="sobrenome" required>
                     </div>
 
+                    
                 </div>
+                
+            </fieldset>
+            
+            <fieldset>
+                <div class="fieldset-wrapper">
 
+                    <div class="input-wrapper">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                </div>
             </fieldset>
 
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>INFORMAÇÕES DO MENTOR</legend>
+                    
+                    <div class="input-wrapper">
+                        <label for="nome-mentor">
+                            Selecione quem foi o seu mentor
+                        </label>
+                        <select name="nome-mentor" id="nome-mentor">
+                            <option value="Mayk">Mayk</option>
+                            <option value="Diego">Diego</option>
+                            <option value="Ana">Ana</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
 
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    
+                    <div class="input-wrapper">
+                        <label for="feedback-mentor">Feedback sobre o mentor</label>
+                        <textarea name="feedback-mentor" id="feedback-mentor" cols="30" rows="7" required></textarea>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="checkbox-mentor" id="checkbox-mentor">
+                        <label for="checkbox-mentor">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    
+                    <legend>AGENDANDO PRÓXIMA MENTORIA</legend>
+
+                    <div class="datetime-wrapper">
+
+                        <div class="date-wrapper">
+                            <label for="data">Data</label>
+                            <input type="date" name="data" id="data" required>                    
+                        </div>
+    
+                        <div class="initial-time-wrapper">
+                            <label for="inicio">Das</label>
+                            <input type="time" name="inicio" id="inicio" required>                    
+                        </div>
+    
+                        <div class="end-time-wrapper">
+                            <label for="fim">Até</label>
+                            <input type="time" name="fim" id="fim" required>                    
+                        </div>
+
+                    </div>
+
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="submit-button">
+                    <input type="submit" value="SALVAR">
+                </div>
+            </fieldset>
         </form>
     </div>
     
